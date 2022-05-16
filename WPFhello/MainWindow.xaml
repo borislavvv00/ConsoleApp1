@@ -1,0 +1,168 @@
+﻿<Window
+    x:Class="WPFhello.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WPFhello"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    Closing="Window_Closing"
+    mc:Ignorable="d">
+    <Grid x:Name="MainGrid">
+        <TextBlock
+            Margin="362,51,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="Hello,  WPF!"
+            TextWrapping="Wrap" />
+        <Button
+            x:Name="btnHello"
+            Width="75"
+            Margin="148,179,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="btnHello_Click"
+            Content="Здрасти!" />
+        <GroupBox
+            x:Name="gbUser"
+            Width="246"
+            Height="190"
+            Margin="10,19,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Header="enter data" />
+        <TextBox
+            x:Name="txtName"
+            Width="120"
+            Height="23"
+            Margin="126,67,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="TextBox"
+            TextWrapping="Wrap" />
+        <Label
+            x:Name="lblName"
+            Margin="67,67,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Label" />
+        <Button
+            x:Name="factorial_butt"
+            Width="75"
+            Margin="526,95,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="factorial_butt_Click"
+            Content="factorial" />
+        <Button
+            x:Name="pow_butt"
+            Width="75"
+            Margin="687,95,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="pow_butt_Click"
+            Content="pow" />
+        <TextBox
+            x:Name="factorial_txtbox"
+            Width="120"
+            Height="23"
+            Margin="526,37,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="TextBox"
+            TextWrapping="Wrap" />
+        <TextBox
+            x:Name="pow_txtbox"
+            Width="120"
+            Height="23"
+            Margin="652,37,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="TextBox"
+            TextWrapping="Wrap" />
+        <TextBox
+            x:Name="txtName1"
+            Width="120"
+            Height="23"
+            Margin="126,95,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="TextBox"
+            TextWrapping="Wrap" />
+        <TextBox
+            x:Name="txtName2"
+            Width="120"
+            Height="23"
+            Margin="126,123,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="TextBox"
+            TextWrapping="Wrap" />
+        <TextBox
+            x:Name="txtName3"
+            Width="120"
+            Height="23"
+            Margin="126,151,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="TextBox"
+            TextWrapping="Wrap" />
+        <TextBlock
+            x:Name="my_test_text_block"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="Bisque"
+            RenderTransformOrigin="0.5,0.5"
+            Text="Test"
+            TextWrapping="Wrap">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform X="400" Y="100" />
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+
+        <TextBlock
+            x:Name="textBlock1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontFamily="Arial Black">
+            I edit XAML myself!
+        </TextBlock>
+        <Button
+            x:Name="Bot_butt"
+            Height="100"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Bottom"
+            Click="Bot_butt_Click">
+            Click me!
+        </Button>
+        <ListBox
+            x:Name="peopleListBox"
+            Width="100"
+            Height="100"
+            Margin="546,179,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top">
+            <ListBoxItem Content="Mike" />
+            <ListBoxItem Content="Lisa" />
+            <ListBoxItem Content="Jonh" />
+            <ListBoxItem Content="Mary" />
+        </ListBox>
+        <Button
+            x:Name="greet_btn"
+            Width="75"
+            Margin="559,284,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="greet_btn_Click"
+            Content="Greeting!" />
+
+
+    </Grid>
+</Window>
