@@ -12,5 +12,8 @@ namespace ConsoleApp1
         public string password { get; set; }
         public string facNumber { get; set; }
         public int role { get; set; }
+
+        public DateTime Created;
+        public DateTime activeDue;
     }
 }
